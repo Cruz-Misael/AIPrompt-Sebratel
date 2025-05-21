@@ -11,6 +11,9 @@ GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.
 def index():
     return render_template('index.html')
 
+
+
+
 @app.route('/chat', methods=['POST'])
 def chat():
     user_input = request.json.get('message')
